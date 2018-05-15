@@ -6,17 +6,14 @@
 <script type="text/javascript">
     
     // Total seconds to wait
-    var seconds = 10;
+    var seconds = 5;
     
     function countdown() {
         seconds = seconds - 1;
         if (seconds < 0) {
-            // Chnage your redirection link here
             window.location = "https://romgatchalian.com";
         } else {
-            // Update remaining seconds
             document.getElementById("countdown").innerHTML = seconds;
-            // Count down using javascript
             window.setTimeout("countdown()", 1000);
         }
     }
